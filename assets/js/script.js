@@ -5,25 +5,27 @@ let jsMethods = [{
   description: "The map() method creates a new array with the results of calling a provided function on every element in the calling array.",
   syntax: "arr.lastIndexOf(searchElement[, fromIndex])",
   mdnLink: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map",
-  example: "\n\
+  example: " \
   var array1 = [1, 4, 9, 16]; \n\
+  \n\
   // pass a function to map \n\
   const map1 = array1.map(x => x * 2);\n\
+  \n\
   console.log(map1); \n\
-  // expected output: Array [2, 8, 18, 32]  \n  "
+  // expected output: Array [2, 8, 18, 32]\
+  "
   
 }, {
   
 }, {
+
 }]
-let code = document.createElement("textarea")
+let code = document.createElement("code")
+code.textContent = jsMethods[0].example;
 code.classList.add("language-js")
-document.body.append(code);
+let pre = document.createElement("pre")
+pre.append(code)
+document.body.append(pre);
 // document.body.innerHTML = `<code class="language-js" >${jsMethods[0].example}</code>`
-let myTextArea = document.querySelector("textarea")
-var myCodeMirror = CodeMirror(function(elt) {
-  myTextArea.parentNode.replaceChild(elt, myTextArea);
-}, {value: jsMethods[0].example, mode:  "javascript", theme: "base16-light", lineNumbers: true, readOnly: true }); 
-
-
+ 
 let loadMethods = () => {};
