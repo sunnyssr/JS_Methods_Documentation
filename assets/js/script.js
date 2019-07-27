@@ -83,6 +83,7 @@ let refreshMethods = () => {
   filteredArray = filteredArray.filter((method) => (method.prototypeName.toLowerCase().includes(methodSearchValue.toLowerCase())) || (method.description.toLowerCase().includes(methodSearchValue.toLowerCase())) || (method.protoOf.toLowerCase().includes(methodSearchValue.toLowerCase())) )
   
   showMethods(filteredArray);
+  Prism.highlightAll();
 }
 
 methodSearchElement.addEventListener("change", refreshMethods)
@@ -99,5 +100,5 @@ window.onload = (function(){
     option.innerText = key;
     filterByMethodElement.append(option)
   }
-  showMethods(jsMethods);
+  refreshMethods();
 })
