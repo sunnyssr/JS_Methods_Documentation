@@ -25,7 +25,7 @@ code.textContent = jsMethods[0].example;
 code.classList.add("language-js")
 let pre = document.createElement("pre")
 pre.append(code)
-document.body.append(pre);
-// document.body.innerHTML = `<code class="language-js" >${jsMethods[0].example}</code>`
+document.querySelector("div").append(pre);
+// document.body.innerHTML = `<pre><code class="language-js" >${jsMethods[0].example}</code><pre>`
  
 let loadMethods = () => {};

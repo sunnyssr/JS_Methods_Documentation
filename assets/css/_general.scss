@@ -1,0 +1,14 @@
+html {
+  fony-size: 16px;
+}
+body{
+  font-family: 'Open Sans', sans-serif;
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+h1, h3, h5 {
+  color: #444444;
+  font-weight: 700;
+  line-height: 1.5;
+}
