@@ -335,5 +335,7 @@ h1, h3, h5 {
   .js-method .method-heading {
     font-size: 1.2rem;
     margin: 0.5rem 0; }
+  .js-method a.mdn-link {
+    color: #1c9ad4; }
 
 /*# sourceMappingURL=style.css.map */
