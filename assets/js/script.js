@@ -16,14 +16,7 @@ let jsMethods = [{
   "
   
 }]
-let code = document.createElement("code")
-code.textContent = jsMethods[0].example;
-code.classList.add("language-js")
-let pre = document.createElement("pre")
-pre.append(code)
-document.querySelector("div").append(pre);
-// document.body.innerHTML = `<pre><code class="language-js" >${jsMethods[0].example}</code><pre>`
- 
+
 let showMethods = (methods) => {
   let htmlCode = ""
   methods.forEach((method) => {
