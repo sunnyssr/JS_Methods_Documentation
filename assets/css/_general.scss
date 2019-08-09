@@ -3,12 +3,20 @@ html {
 }
 body{
   font-family: 'Open Sans', sans-serif;
+  color: #eeeeee;
+  background-attachment: fixed;
+  background: #200122; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #200122, #6f0000); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #200122, #6f0000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 *, *::before, *::after {
   box-sizing: border-box;
 }
 h1, h3, h5 {
-  color: #444444;
+  color: #cccccc;
   font-weight: 700;
   line-height: 1.5;
+}
+a {
+  color: #cccccc;
 }
